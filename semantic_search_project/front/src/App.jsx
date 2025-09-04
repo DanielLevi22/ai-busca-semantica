@@ -17,9 +17,6 @@ function App() {
   const [collection, isConnected] = useChroma(CHROMA_COLLECTION_NAME);
   const [error, setError] = useState(null);
 
-
-
-  async function queryDatabase() {
     setIsLoading(true);
 
     try{
@@ -37,6 +34,30 @@ function App() {
       <h1>Movie Recommender</h1>
       <div className="form-container">
         <textarea onChange={e => setQueryText(e.target.value)}></textarea>
+
+
+
+
+
+
+
+
+
+  async function queryDatabase() {
+
+  async function queryDatabase() {
+
+  async function queryDatabase() {
+
+  async function queryDatabase() {
+
+  async function queryDatabase() {
+
+  async function queryDatabase() {
+
+  async function queryDatabase() {
+
+  async function queryDatabase() {
         <button onClick={queryDatabase} disabled={!isConnected || isLoading}>Submit</button>
       </div>
       {isLoading ? <LoadingIndicator /> : null}
